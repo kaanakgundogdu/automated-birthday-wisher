@@ -2,12 +2,18 @@ import smtplib
 import random
 import datetime as dt
 
-gmail_my_email = "firsttestacc08@gmail.com"
-gmail_password = "qftqjedijnvtlurj"
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+gmail_my_email = "---------@gmail.com"
+gmail_password = "-------------------------------"
 gmail_protocol = "smtp.gmail.com"
 
-yahoo_email = "secondtest.acc@yahoo.com"
-yahoo_password = "wooqlvjidytrokak"
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+yahoo_email = "------------------.acc@yahoo.com"
+yahoo_password = "-------------"
 yahoo_protocol = "smtp.mail.yahoo.com"
 
 current_time = dt.datetime.now()

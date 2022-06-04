@@ -7,8 +7,12 @@ birthday_people_name = ""
 birthday_people_email = ""
 is_there_any_birthday = False
 
-gmail_my_email = "firsttestacc08@gmail.com"
-gmail_password = "qftqjedijnvtlurj"
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+# YOU SHOULD WRITE YOUR OWN MAIL AND PASSWORD
+
+gmail_my_email = "--------------------@gmail.com"
+gmail_password = "-------------------------------------------"
 gmail_protocol = "smtp.gmail.com"
 
 current_time = dt.datetime.now()
@@ -28,11 +32,11 @@ for i in birthday_dict["month"]:
 
 rand_file_index = random.randint(1, 3)
 
-
-with open(f"app\letter_templates\letter_{rand_file_index}.txt", "r") as file:
-    data = file.read().replace("[NAME]", birthday_people_name)
-    with smtplib.SMTP(gmail_protocol, port=587) as connection:
-        connection.starttls()
-        connection.login(user=gmail_my_email, password=gmail_password)
-        connection.sendmail(from_addr=gmail_my_email, to_addrs=birthday_people_email,
-                            msg=f"Subject:Happy Birthday\n\n{data}.")
+if is_there_any_birthday:
+    with open(f"app\letter_templates\letter_{rand_file_index}.txt", "r") as file:
+        data = file.read().replace("[NAME]", birthday_people_name)
+        with smtplib.SMTP(gmail_protocol, port=587) as connection:
+            connection.starttls()
+            connection.login(user=gmail_my_email, password=gmail_password)
+            connection.sendmail(from_addr=gmail_my_email, to_addrs=birthday_people_email,
+                                msg=f"Subject:Happy Birthday\n\n{data}.")
